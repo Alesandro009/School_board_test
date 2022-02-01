@@ -15,7 +15,7 @@ try {
                 'name' => 'Alex',
             ]
         ],
-        'grades' => [
+        'boards' => [
             [
                 'name' => 'CSM',
             ],
@@ -40,8 +40,8 @@ try {
     }
     $students = $dbConn->fetchRowMany('SELECT * FROM students');
     $studentsPluck = pluck($students, 'name');
-    $grades = $dbConn->fetchRowMany('SELECT * FROM grades');
-    $gradesPluck = pluck($grades, 'name');
+    $boards = $dbConn->fetchRowMany('SELECT * FROM boards');
+    $boardsPluck = pluck($boards, 'name');
     foreach ($dataGradesStudents as $nameGrades => $students) {
         foreach($students as $nameStudent=>$grades){
             foreach($grades as $value){
