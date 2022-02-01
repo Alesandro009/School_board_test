@@ -1,0 +1,17 @@
+{
+    "name": "aleksandr/testtask",
+    "description": "This is the description of the project.",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "TestTask": "src/"
+        }
+    },
+    "require-dev": {
+        "simplon/mysql": "^2.2"
+    }
+}
